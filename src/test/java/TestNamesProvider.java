@@ -1,4 +1,4 @@
-public class TestNames {
+public class TestNamesProvider {
 
     static final String SII_PORTAL = "Checking title for siiportal.sii.pl";
     static final String ONET = "Checking title for onet.pl";

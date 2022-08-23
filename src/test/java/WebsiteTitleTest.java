@@ -8,10 +8,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class WebsiteTitleTest extends BaseTest {
 
     @ParameterizedTest
+    @DisplayName(TestNamesProvider.SII_PORTAL)
     @ValueSource(strings = TitlesProvider.SII_PORTAL)
-    @DisplayName(TestNames.SII_PORTAL)
-    @Tag("regression")
-    @Tag("siiPortal")
+    @Tag(TagsProvider.REGRESSION)
+    @Tag(TagsProvider.SII_PORTAL)
     void checkTitleForSiiPortal(String expectedTitle) {
         driver.get(BaseURL.SII_PORTAL);
         driver.manage().window().maximize();
@@ -19,10 +19,10 @@ public class WebsiteTitleTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @DisplayName(TestNamesProvider.ONET)
     @ValueSource(strings = TitlesProvider.ONET)
-    @DisplayName(TestNames.ONET)
-    @Tag("regression")
-    @Tag("onet")
+    @Tag(TagsProvider.REGRESSION)
+    @Tag(TagsProvider.ONET)
     void checkTitleForOnet(String expectedTitle) {
         driver.get(BaseURL.ONET);
         driver.manage().window().maximize();
@@ -30,10 +30,10 @@ public class WebsiteTitleTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @DisplayName(TestNamesProvider.KOTUSZKOWO)
     @ValueSource(strings = TitlesProvider.KOTUSZKOWO)
-    @DisplayName(TestNames.KOTUSZKOWO)
-    @Tag("regression")
-    @Tag("kotuszkowo")
+    @Tag(TagsProvider.REGRESSION)
+    @Tag(TagsProvider.KOTUSZKOWO)
     void checkTitleForKotuszkowo(String expectedTitle) {
         driver.get(BaseURL.KOTUSZKOWO);
         driver.manage().window().maximize();
@@ -41,10 +41,10 @@ public class WebsiteTitleTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @DisplayName(TestNamesProvider.FILMWEB)
     @ValueSource(strings = TitlesProvider.FILMWEB)
-    @DisplayName(TestNames.FILMWEB)
-    @Tag("regression")
-    @Tag("filmweb")
+    @Tag(TagsProvider.REGRESSION)
+    @Tag(TagsProvider.FILMWEB)
     void checkTitleForFilmweb(String expectedTitle) {
         driver.get(BaseURL.FILMWEB);
         driver.manage().window().maximize();
@@ -52,10 +52,10 @@ public class WebsiteTitleTest extends BaseTest {
     }
 
     @ParameterizedTest
+    @DisplayName(TestNamesProvider.SELENIUM)
     @ValueSource(strings = TitlesProvider.SELENIUM)
-    @DisplayName(TestNames.SELENIUM)
-    @Tag("regression")
-    @Tag("selenium")
+    @Tag(TagsProvider.REGRESSION)
+    @Tag(TagsProvider.SELENIUM)
     void checkTitleForSeleniumDocumentation(String expectedTitle) {
         driver.get(BaseURL.SELENIUM);
         driver.manage().window().maximize();
