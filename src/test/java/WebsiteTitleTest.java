@@ -8,56 +8,56 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class WebsiteTitleTest extends BaseTest {
 
     @ParameterizedTest
-    @DisplayName(TestNamesProvider.SII_PORTAL)
-    @ValueSource(strings = TitlesProvider.SII_PORTAL)
-    @Tag(TagsProvider.REGRESSION)
-    @Tag(TagsProvider.SII_PORTAL)
+    @DisplayName(DataProvider.SII_PORTAL_NAME)
+    @ValueSource(strings = DataProvider.SII_PORTAL_TITLE)
+    @Tag(DataProvider.REGRESSION_TAG)
+    @Tag(DataProvider.SII_PORTAL_TAG)
     void checkTitleForSiiPortal(String expectedTitle) {
-        driver.get(BaseURL.SII_PORTAL);
+        driver.get(DataProvider.SII_PORTAL_URL);
         driver.manage().window().maximize();
         assertThat(driver.getTitle()).isEqualTo(expectedTitle);
     }
 
     @ParameterizedTest
-    @DisplayName(TestNamesProvider.ONET)
-    @ValueSource(strings = TitlesProvider.ONET)
-    @Tag(TagsProvider.REGRESSION)
-    @Tag(TagsProvider.ONET)
+    @DisplayName(DataProvider.ONET_NAME)
+    @ValueSource(strings = DataProvider.ONET_TITLE)
+    @Tag(DataProvider.REGRESSION_TAG)
+    @Tag(DataProvider.ONET_TAG)
     void checkTitleForOnet(String expectedTitle) {
-        driver.get(BaseURL.ONET);
+        driver.get(DataProvider.ONET_URL);
         driver.manage().window().maximize();
         assertThat(driver.getTitle()).isEqualTo(expectedTitle);
     }
 
     @ParameterizedTest
-    @DisplayName(TestNamesProvider.KOTUSZKOWO)
-    @ValueSource(strings = TitlesProvider.KOTUSZKOWO)
-    @Tag(TagsProvider.REGRESSION)
-    @Tag(TagsProvider.KOTUSZKOWO)
+    @DisplayName(DataProvider.KOTUSZKOWO_NAME)
+    @ValueSource(strings = DataProvider.KOTUSZKOWO_TITLE)
+    @Tag(DataProvider.REGRESSION_TAG)
+    @Tag(DataProvider.KOTUSZKOWO_TAG)
     void checkTitleForKotuszkowo(String expectedTitle) {
-        driver.get(BaseURL.KOTUSZKOWO);
+        driver.get(DataProvider.KOTUSZKOWO_URL);
         driver.manage().window().maximize();
         assertThat(driver.getTitle()).isEqualTo(expectedTitle);
     }
 
     @ParameterizedTest
-    @DisplayName(TestNamesProvider.FILMWEB)
-    @ValueSource(strings = TitlesProvider.FILMWEB)
-    @Tag(TagsProvider.REGRESSION)
-    @Tag(TagsProvider.FILMWEB)
+    @DisplayName(DataProvider.FILMWEB_NAME)
+    @ValueSource(strings = DataProvider.FILMWEB_TITLE)
+    @Tag(DataProvider.REGRESSION_TAG)
+    @Tag(DataProvider.FILMWEB_TAG)
     void checkTitleForFilmweb(String expectedTitle) {
-        driver.get(BaseURL.FILMWEB);
+        driver.get(DataProvider.FILMWEB_URL);
         driver.manage().window().maximize();
         assertThat(driver.getTitle()).isEqualTo(expectedTitle);
     }
 
     @ParameterizedTest
-    @DisplayName(TestNamesProvider.SELENIUM)
-    @ValueSource(strings = TitlesProvider.SELENIUM)
-    @Tag(TagsProvider.REGRESSION)
-    @Tag(TagsProvider.SELENIUM)
+    @DisplayName(DataProvider.SELENIUM_NAME)
+    @ValueSource(strings = DataProvider.SELENIUM_TITLE)
+    @Tag(DataProvider.REGRESSION_TAG)
+    @Tag(DataProvider.SELENIUM_TAG)
     void checkTitleForSeleniumDocumentation(String expectedTitle) {
-        driver.get(BaseURL.SELENIUM);
+        driver.get(DataProvider.SELENIUM_URL);
         driver.manage().window().maximize();
         assertThat(driver.getTitle()).isEqualTo(expectedTitle);
     }
